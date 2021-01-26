@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>视频聊天</title>
+</head>
+<body>
+	<button id="videoChat">视频聊天</button>
+	<script type="text/javascript">
+		function byId(idname){
+			return typeof(idname)==="string" ? document.getElementById(idname) : idname;
+		}
+		var videoChat = byId("videoChat");
+
+		videoChat.onclick = function(){
+            window.webkit.messageHandlers.videoChat.postMessage({});
+        }
+	</script>
+</body>
+</html>
