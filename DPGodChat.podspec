@@ -30,11 +30,11 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DPGodChat/Classes/**/*'
+  # s.source_files = 'DPGodChat/Classes/**/*'
 
   #表示类库的源文件存放目录（从上面的目录结构大家可以看到我们的framework源文件都是放在Classes文件夹下，
   #这里是可以修改的，如果你想改的话，随便放在哪里都行，只要在podfile文件中指定好路径都行。我这里就和classes同级添加了新的文件夹Library）
-  s.source_files = 'DPGodChat/Classes/**/*'
+  # s.source_files = 'DPGodChat/Classes/**/*'
   # 资源文件 逗号后面不能有空格
   # s.resource_bundles = {
   #     'DPGodChat' => ['DPGodChat/Assets/*.{jpg,pack,png}']
