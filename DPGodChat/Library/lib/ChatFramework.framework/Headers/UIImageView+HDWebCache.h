@@ -34,7 +34,7 @@
     // Here we use the provided hdSD_setImageWithURL: method to load the web image
     // Ensure you use a placeholder image otherwise cells will be initialized with no image
     [cell.imageView hdSD_setImageWithURL:[NSURL URLWithString:@"http://example.com/image.jpg"]
-                      placeholderImage:[UIImage imageNamed:@"placeholder"]];
+                      placeholderImage:[[UIImage imageWithContentsOfFile:[[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"Image" ofType:@"bundle"]] pathForResource:@"placeholder"]];
  
     cell.textLabel.text = @"My Text";
     return cell;

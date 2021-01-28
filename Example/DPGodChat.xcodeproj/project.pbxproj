@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4182AC68A7CE7958689B5810 /* Pods_DPGodChat_Tests_ShareScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9106A881BC1237AD8DBA9BF8 /* Pods_DPGodChat_Tests_ShareScreen.framework */; };
+		480996D525C29D4200CC1119 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480996D425C29D4200CC1119 /* CoreData.framework */; };
+		480996D625C29D4D00CC1119 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480996D425C29D4200CC1119 /* CoreData.framework */; };
+		480996F225C2A3C000CC1119 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 480996F125C2A3C000CC1119 /* libc++.tbd */; };
 		489EEF1A25BA713100C1E315 /* GCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489EEF1125BA713100C1E315 /* GCWebViewController.m */; };
 		489EEF1B25BA713100C1E315 /* godChat.html in Resources */ = {isa = PBXBuildFile; fileRef = 489EEF1225BA713100C1E315 /* godChat.html */; };
 		489EEF1C25BA713100C1E315 /* SQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489EEF1325BA713100C1E315 /* SQHomeViewController.m */; };
@@ -76,12 +78,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07354AA8497C1F5EACD0C836 /* Pods-DPGodChat_Tests-ShareScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPGodChat_Tests-ShareScreen.release.xcconfig"; path = "Target Support Files/Pods-DPGodChat_Tests-ShareScreen/Pods-DPGodChat_Tests-ShareScreen.release.xcconfig"; sourceTree = "<group>"; };
 		0943852D050EFC9278754841 /* Pods-DPGodChat_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPGodChat_Example.debug.xcconfig"; path = "Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0D1C956A140A68E9FFBED49E /* Pods-DPGodChat_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPGodChat_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DPGodChat_Tests/Pods-DPGodChat_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0EF1E328346850F56E41C869 /* Pods-DPGodChat_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPGodChat_Tests.release.xcconfig"; path = "Target Support Files/Pods-DPGodChat_Tests/Pods-DPGodChat_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3361A79D8E212E51EFE0F997 /* Pods-DPGodChat_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPGodChat_Example.release.xcconfig"; path = "Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example.release.xcconfig"; sourceTree = "<group>"; };
 		46B392725570250152F6EAE1 /* DPGodChat.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DPGodChat.podspec; path = ../DPGodChat.podspec; sourceTree = "<group>"; };
+		480996D425C29D4200CC1119 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		480996E525C2A24700CC1119 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		480996F125C2A3C000CC1119 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		489EEF1125BA713100C1E315 /* GCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWebViewController.m; sourceTree = "<group>"; };
 		489EEF1225BA713100C1E315 /* godChat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = godChat.html; sourceTree = "<group>"; };
 		489EEF1325BA713100C1E315 /* SQHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQHomeViewController.m; sourceTree = "<group>"; };
@@ -119,10 +123,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9106A881BC1237AD8DBA9BF8 /* Pods_DPGodChat_Tests_ShareScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPGodChat_Tests_ShareScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		964A5FB76EE2B3FE0F36EC20 /* Pods_DPGodChat_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPGodChat_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6163A5D7770AA8D71922D8 /* Pods_DPGodChat_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPGodChat_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3D78C478868A529EA27C8B3 /* Pods-DPGodChat_Tests-ShareScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPGodChat_Tests-ShareScreen.debug.xcconfig"; path = "Target Support Files/Pods-DPGodChat_Tests-ShareScreen/Pods-DPGodChat_Tests-ShareScreen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480996D625C29D4D00CC1119 /* CoreData.framework in Frameworks */,
 				48B7E2FA25BABBA400658F55 /* ReplayKit.framework in Frameworks */,
-				4182AC68A7CE7958689B5810 /* Pods_DPGodChat_Tests_ShareScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480996F225C2A3C000CC1119 /* libc++.tbd in Frameworks */,
+				480996D525C29D4200CC1119 /* CoreData.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				489EEF4025BA7D5300C1E315 /* SystemConfiguration.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
@@ -215,6 +219,9 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				480996F125C2A3C000CC1119 /* libc++.tbd */,
+				480996E525C2A24700CC1119 /* libresolv.9.tbd */,
+				480996D425C29D4200CC1119 /* CoreData.framework */,
 				489EEF3F25BA7D5300C1E315 /* SystemConfiguration.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
@@ -223,7 +230,6 @@
 				AA6163A5D7770AA8D71922D8 /* Pods_DPGodChat_Tests.framework */,
 				964A5FB76EE2B3FE0F36EC20 /* Pods_DPGodChat_Example.framework */,
 				48B7E2F925BABBA400658F55 /* ReplayKit.framework */,
-				9106A881BC1237AD8DBA9BF8 /* Pods_DPGodChat_Tests_ShareScreen.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -289,8 +295,6 @@
 				3361A79D8E212E51EFE0F997 /* Pods-DPGodChat_Example.release.xcconfig */,
 				0D1C956A140A68E9FFBED49E /* Pods-DPGodChat_Tests.debug.xcconfig */,
 				0EF1E328346850F56E41C869 /* Pods-DPGodChat_Tests.release.xcconfig */,
-				D3D78C478868A529EA27C8B3 /* Pods-DPGodChat_Tests-ShareScreen.debug.xcconfig */,
-				07354AA8497C1F5EACD0C836 /* Pods-DPGodChat_Tests-ShareScreen.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -302,7 +306,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48B7E30325BABBA400658F55 /* Build configuration list for PBXNativeTarget "ShareScreen" */;
 			buildPhases = (
-				E6A23CF4557E4E87A794B32E /* [CP] Check Pods Manifest.lock */,
 				48B7E2F425BABBA400658F55 /* Sources */,
 				48B7E2F525BABBA400658F55 /* Frameworks */,
 				48B7E2F625BABBA400658F55 /* Resources */,
@@ -327,6 +330,7 @@
 				E4C27D9063DC3B42D9399064 /* [CP] Embed Pods Frameworks */,
 				489EF72625BAAB1D00C1E315 /* Embed Frameworks */,
 				48B7E30625BABBA400658F55 /* Embed App Extensions */,
+				DDFC2F2227D4B69411345F31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -479,6 +483,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DDFC2F2227D4B69411345F31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-resources.sh",
+				"${PODS_ROOT}/../../DPGodChat/Library/lib/HelpDeskUIResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HelpDeskUIResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E4C27D9063DC3B42D9399064 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +509,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${PODS_ROOT}/../../DPGodChat/Library/lib/ChatFramework.framework",
 				"${PODS_ROOT}/HelpDesk/HelpDesk.framework",
 				"${PODS_ROOT}/Hyphenate/Hyphenate.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -498,6 +521,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChatFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HelpDesk.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hyphenate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
@@ -509,28 +533,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6A23CF4557E4E87A794B32E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DPGodChat_Tests-ShareScreen-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -610,7 +612,6 @@
 /* Begin XCBuildConfiguration section */
 		48B7E30425BABBA400658F55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3D78C478868A529EA27C8B3 /* Pods-DPGodChat_Tests-ShareScreen.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -644,6 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = deepexi.mobiebase.com.ShareScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = mobiebaseShareScreenDev;
@@ -654,7 +656,6 @@
 		};
 		48B7E30525BABBA400658F55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07354AA8497C1F5EACD0C836 /* Pods-DPGodChat_Tests-ShareScreen.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -774,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0943852D050EFC9278754841 /* Pods-DPGodChat_Example.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DPGodChat_Example.entitlements;
 				CODE_SIGN_STYLE = Manual;
@@ -785,6 +787,7 @@
 				INFOPLIST_FILE = "DPGodChat/DPGodChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = deepexi.mobiebase.com;
@@ -799,6 +802,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3361A79D8E212E51EFE0F997 /* Pods-DPGodChat_Example.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DPGodChat_Example.entitlements;
 				CODE_SIGN_STYLE = Manual;
@@ -810,6 +814,7 @@
 				INFOPLIST_FILE = "DPGodChat/DPGodChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = deepexi.mobiebase.com;

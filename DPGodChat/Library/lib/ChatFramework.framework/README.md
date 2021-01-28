@@ -62,7 +62,7 @@ handled for you, from async downloads to caching management.
 
     // Here we use the new provided sd_setImageWithURL: method to load the web image
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"]
-                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+                      placeholderImage:[UIImage imageNamed:@"HelpDeskUIResource.bundle/placeholder.png"]];
 
     cell.textLabel.text = @"My Text";
     return cell;
@@ -77,7 +77,7 @@ has completed with success or not:
 ```objective-c
 // Here we use the new provided sd_setImageWithURL: method to load the web image
 [cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"]
-                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]
+                      placeholderImage:[UIImage imageNamed:@"HelpDeskUIResource.bundle/placeholder.png"]
                              completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                                 ... completion code here ...
                              }];
@@ -201,7 +201,7 @@ If you don't control the image server you're using, you may not be able to chang
 
 ``` objective-c
 [imageView sd_setImageWithURL:[NSURL URLWithString:@"https://graph.facebook.com/olivier.poitrey/picture"]
-                 placeholderImage:[UIImage imageNamed:@"avatar-placeholder.png"]
+                 placeholderImage:[UIImage imageNamed:@"HelpDeskUIResource.bundle/avatar-placeholder.png"]
                           options:SDWebImageRefreshCached];
 ```
 

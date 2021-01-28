@@ -7,7 +7,6 @@
 //
 
 #import <ReplayKit/ReplayKit.h>
-#import <ChatFramework/DPSampleHandler.h>
 @interface SampleHandler : RPBroadcastSampleHandler
 @property (nonatomic) NSUserDefaults *sharedDefaults;
 @property (nonatomic) unsigned long buffersize;

@@ -8,9 +8,5 @@ target 'DPGodChat_Example' do
 target 'DPGodChat_Tests' do
   inherit! :search_paths
 
-target 'ShareScreen' do
-  pod 'DPGodChat', :path => '../'
-#  pod 'DPGodChat'
-end
   end
 end

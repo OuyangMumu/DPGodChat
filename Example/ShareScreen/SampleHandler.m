@@ -8,7 +8,6 @@
 
 
 #import "SampleHandler.h"
-#import <ChatFramework/GCSessionManager.h>
 @implementation SampleHandler
 
 - (void)broadcastStartedWithSetupInfo:(NSDictionary<NSString *,NSObject *> *)setupInfo {
@@ -18,8 +17,6 @@
     _mYuvbuffer = nil;
     _data = [NSMutableData data];
     self.sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.deepexi.mobiebase.com"];
-    
-    NSLog(@"=============================%@",[GCSessionManager shareSessionManager].appGroupID);
     [self.sharedDefaults setObject:[NSNumber numberWithInt:2] forKey:@"result"];
 }
 
