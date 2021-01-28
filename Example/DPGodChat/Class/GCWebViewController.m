@@ -37,10 +37,10 @@
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
 {
     if ([message.name isEqualToString:@"login"]) {
-        [self videoChat];
+        [self videoChat:@{}];
     }
     if ([message.name isEqualToString:@"videoChat"]) {
-        [self videoChat];
+        [self videoChat:@{}];
     }
 }
 
@@ -48,7 +48,7 @@
     NSLog(@"videoChat");
     NSLog(@"视频");
     
-    [GCSessionManager shareSessionManager] presentGodCallViewControllerWithUsername:<#(nonnull NSString *)#> password:<#(nonnull NSString *)#> animated:<#(BOOL)#>
+//    [GCSessionManager shareSessionManager] presentGodCallViewControllerWithUsername:<#(nonnull NSString *)#> password:<#(nonnull NSString *)#> animated:<#(BOOL)#>
     [[GCSessionManager shareSessionManager] presentGodCallViewControllerWithUsername:@"webim-visitor-ykjybphj6rfx7crreb73" token:@"YWMtNS0zXii_EeuHrHufwCKhz7nK9gruwERalvfDPJl_6I3HaZpQJ7YR64xwKT31XCe5AwMAAAF11bzeTwBPGgAbswJK91cbbnDMx3xVMQ5m4W5H-kf4_JlFCO_CFIYHWA" animated:YES];
     [[GCSessionManager shareSessionManager] presentGodCallViewControllerWithAnimated:YES];
 }
