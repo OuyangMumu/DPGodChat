@@ -27,7 +27,7 @@
 {
     [super viewWillAppear:animated];
     [self.view addSubview:self.wkWebView];
-    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"godChat" ofType:@"html"]]]];
+    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://zwyt.szlhq.gov.cn/one-hall-dev/?userType=3"]]];
     [self.view addSubview:self.progressView];
 }
 
@@ -36,15 +36,20 @@
 /** 通过网页返回的方法名调用我们写的方法 */
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
 {
+    if ([message.name isEqualToString:@"login"]) {
+        [self videoChat];
+    }
     if ([message.name isEqualToString:@"videoChat"]) {
         [self videoChat];
     }
 }
 
-- (void)videoChat
-{
+- (void)videoChat:(NSDictionary *)params {
     NSLog(@"videoChat");
     NSLog(@"视频");
+    
+    [GCSessionManager shareSessionManager] presentGodCallViewControllerWithUsername:<#(nonnull NSString *)#> password:<#(nonnull NSString *)#> animated:<#(BOOL)#>
+    [[GCSessionManager shareSessionManager] presentGodCallViewControllerWithUsername:@"webim-visitor-ykjybphj6rfx7crreb73" token:@"YWMtNS0zXii_EeuHrHufwCKhz7nK9gruwERalvfDPJl_6I3HaZpQJ7YR64xwKT31XCe5AwMAAAF11bzeTwBPGgAbswJK91cbbnDMx3xVMQ5m4W5H-kf4_JlFCO_CFIYHWA" animated:YES];
     [[GCSessionManager shareSessionManager] presentGodCallViewControllerWithAnimated:YES];
 }
 
@@ -72,6 +77,7 @@
     if (!_wkWebView) {
         WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
         [config.userContentController addScriptMessageHandler:self name:@"videoChat"];
+        [config.userContentController addScriptMessageHandler:self name:@"login"];
         _wkWebView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 64) configuration:config];
         _wkWebView.navigationDelegate = self;
         _wkWebView.UIDelegate = self;
@@ -95,8 +101,9 @@
 {
     if (_wkWebView)
     {
-        [_wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"videoChat"];
-        [_wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
+//        [_wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"videoChat"];
+//        [_wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"login"];
+//        [_wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
     }
 }
 

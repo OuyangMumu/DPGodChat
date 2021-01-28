@@ -65,6 +65,9 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 清空未读信息(表示已读)
 - (void)clearUnreadMessage;
 
+#pragma mark - 登录并发起视频
+- (void)presentGodCallViewControllerWithUsername:(NSString *)username token:(NSString *)token animated:(BOOL)animated;
+
 @end
 
 NS_ASSUME_NONNULL_END
