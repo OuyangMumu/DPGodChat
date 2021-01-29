@@ -3,8 +3,8 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'DPGodChat_Example' do
-  pod 'DPGodChat', :path => '../'
-#  pod 'DPGodChat'
+#  pod 'DPGodChat', :path => '../'
+  pod 'DPGodChat'
 target 'DPGodChat_Tests' do
   inherit! :search_paths
 

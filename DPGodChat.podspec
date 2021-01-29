@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DPGodChat'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = '环信SDK Pod'
 
 # This description is used to generate tags and improve search results.
@@ -51,12 +51,12 @@ TODO: Add long description of the pod here.
   s.resource = 'DPGodChat/Library/lib/*.bundle'
 
   #
-  s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'MJExtension', '~> 3.1.2'
-  s.dependency 'MJRefresh', '~> 3.1.15.3'
-  s.dependency 'Masonry', '~> 1.1.0'
-  s.dependency 'SDWebImage', '~> 5.7.0'
-  s.dependency 'MBProgressHUD', '~> 1.1.0'
+  s.dependency 'AFNetworking'
+  s.dependency 'MJExtension'
+  s.dependency 'MJRefresh'
+  s.dependency 'Masonry'
+  s.dependency 'SDWebImage'
+  s.dependency 'MBProgressHUD'
   s.dependency 'HelpDesk'
   s.dependency 'Hyphenate'
 
