@@ -4,7 +4,7 @@ platform :ios, '11.0'
 
 target 'DPGodChat_Example' do
 #  pod 'DPGodChat', :path => '../'
-  pod 'DPGodChat'    , '~> 0.1.5'
+  pod 'DPGodChat' 
 target 'DPGodChat_Tests' do
   inherit! :search_paths
 

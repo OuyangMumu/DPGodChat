@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DPGodChat'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = '环信SDK Pod'
 
 # This description is used to generate tags and improve search results.
@@ -56,7 +56,7 @@ TODO: Add long description of the pod here.
   s.dependency 'MJRefresh'
   s.dependency 'Masonry'
   s.dependency 'SDWebImage'
-  s.dependency 'MBProgressHUD'
+  s.dependency 'MBProgressHUD', '~> 1.1.0'
   s.dependency 'HelpDesk'
   s.dependency 'Hyphenate'
 
