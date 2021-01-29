@@ -1,10 +1,10 @@
 use_frameworks!
 
-platform :ios, '11.0'
+platform :ios, '9.0'
 
 target 'DPGodChat_Example' do
 #  pod 'DPGodChat', :path => '../'
-  pod 'DPGodChat' 
+  pod 'DPGodChat'    , '~> 0.1.9'
 target 'DPGodChat_Tests' do
   inherit! :search_paths
 
