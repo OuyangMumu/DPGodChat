@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DPGodChat'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '环信SDK Pod'
 
 # This description is used to generate tags and improve search results.

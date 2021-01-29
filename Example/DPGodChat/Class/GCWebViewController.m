@@ -34,8 +34,7 @@
 #pragma mark - WKScriptMessageHandler
 
 /** 通过网页返回的方法名调用我们写的方法 */
-- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
-{
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
     if ([message.name isEqualToString:@"videoChat"]) {
         [self videoChat:message.body];
     }

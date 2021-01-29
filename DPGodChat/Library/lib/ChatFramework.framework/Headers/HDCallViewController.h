@@ -40,6 +40,9 @@ typedef void (^HangUpCallback)(HDCallViewController *callVC, NSString *timeStr);
                                               nickName:(NSString *)aNickname;
 
 
++ (HDCallViewController *)callingUpVideoWithAgentName:(NSString *)aAgentName avatarStr:(NSString *)aAvatarStr nickName:(NSString *)aNickname;
+
+
 @property (nonatomic, strong) NSUserDefaults *sharedDefaults;
 @property (nonatomic, strong) RPSystemBroadcastPickerView *systemBroadcastPickerView;
 @property (weak, nonatomic) NSTimer *timeRecord;
