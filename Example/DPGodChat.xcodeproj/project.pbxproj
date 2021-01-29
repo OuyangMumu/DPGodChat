@@ -330,7 +330,7 @@
 				E4C27D9063DC3B42D9399064 /* [CP] Embed Pods Frameworks */,
 				489EF72625BAAB1D00C1E315 /* Embed Frameworks */,
 				48B7E30625BABBA400658F55 /* Embed App Extensions */,
-				DDFC2F2227D4B69411345F31 /* [CP] Copy Pods Resources */,
+				309D819B064A617EABF3FC30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -461,6 +461,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		309D819B064A617EABF3FC30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-resources.sh",
+				"${PODS_ROOT}/DPGodChat/DPGodChat/Library/lib/HelpDeskUIResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HelpDeskUIResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8E44B3CF1EE1BFB52F54AD5E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,24 +501,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DDFC2F2227D4B69411345F31 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-resources.sh",
-				"${PODS_ROOT}/../../DPGodChat/Library/lib/HelpDeskUIResource.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HelpDeskUIResource.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E4C27D9063DC3B42D9399064 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,7 +509,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DPGodChat_Example/Pods-DPGodChat_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${PODS_ROOT}/../../DPGodChat/Library/lib/ChatFramework.framework",
+				"${PODS_ROOT}/DPGodChat/DPGodChat/Library/lib/ChatFramework.framework",
 				"${PODS_ROOT}/HelpDesk/HelpDesk.framework",
 				"${PODS_ROOT}/Hyphenate/Hyphenate.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
